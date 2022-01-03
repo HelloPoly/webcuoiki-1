@@ -15,7 +15,9 @@ $user = $data->user;
 $fullname = $data->fullname;
 $phongban = $data->phongban;
 $level = $data->chucvu;
+$birthday = $data->birthday;
+$gender = $data->gender;
 
-$result = register($user, $user, $fullname, $phongban, $level);
+$result = register($user, $user, $fullname, $phongban, $level, $birthday, $gender);
 echo json_encode($result);
 ?>
